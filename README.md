@@ -6,7 +6,9 @@ This repository holds the code, the raw results and the checking scripts for the
 > **Governing Persistent Agent Memory: A Causal Study of Authority, Trust, and Recency.**
 > AIEI 2027 (paper 1223).
 
-Archived release: DOI [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1469638364.svg)](https://doi.org/10.5281/zenodo.24490034)
+
+Archived on Zenodo: DOI [10.5281/zenodo.24490034](https://doi.org/10.5281/zenodo.24490034) (all versions; v1.0.0 is [10.5281/zenodo.24490035](https://doi.org/10.5281/zenodo.24490035))
 
 It contains everything the paper's experiments need, and nothing else:
 - the governance mechanism (`aisos/memory`, `aisos/security`, `aisos/dream`, `aisos/agent`);
