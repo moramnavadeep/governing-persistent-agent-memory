@@ -1,0 +1,173 @@
+{
+  "manifests": [
+    {
+      "experiment_id": "e8_ablation",
+      "run_id": "seed4_1788197630",
+      "timestamp": 1788199121.9333346,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "54ff49c2c6c0a62d807c89ca73d2c7fc9c58ecdf74e229f664bf833a3093788c",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=4",
+      "seed": 4,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos",
+        "periodic_aisos_without_authority"
+      ],
+      "interaction_count": 1000,
+      "session_count": 20,
+      "reset_count": 19,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_ablation\\seed_4\\no_sleep_naive_seed4_1788197630.json",
+        "results\\raw\\e8_ablation\\seed_4\\continuous_mvcc_seed4_1788197630.json",
+        "results\\raw\\e8_ablation\\seed_4\\periodic_aisos_seed4_1788197630.json",
+        "results\\raw\\e8_ablation\\seed_4\\periodic_aisos_without_authority_seed4_1788197630.json"
+      ]
+    }
+  ],
+  "summaries": {
+    "no_sleep_naive": {
+      "n_queries": 889,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 810,
+        "UNDETERMINED": 33,
+        "INCORRECT": 46
+      },
+      "correct_rate": 0.9111361079865017,
+      "incorrect_rate": 0.05174353205849269,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.03712035995500562,
+      "retrieval_accuracy": 0.9462616822429907,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 46,
+      "n_dangerous_contradiction_errors": 46,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9111361079865017,
+      "latency_p50_s": 0.3511185646057129,
+      "latency_p95_s": 0.4720306396484375,
+      "latency_p99_s": 0.48550230979919434,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 32,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 334.218843460083
+    },
+    "continuous_mvcc": {
+      "n_queries": 889,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 810,
+        "UNDETERMINED": 33,
+        "INCORRECT": 46
+      },
+      "correct_rate": 0.9111361079865017,
+      "incorrect_rate": 0.05174353205849269,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.03712035995500562,
+      "retrieval_accuracy": 0.9462616822429907,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 46,
+      "n_dangerous_contradiction_errors": 46,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9111361079865017,
+      "latency_p50_s": 0.44487547874450684,
+      "latency_p95_s": 0.47712001800537107,
+      "latency_p99_s": 0.49185450553894045,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 111,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 384.565767288208
+    },
+    "periodic_aisos": {
+      "n_queries": 889,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "UNKNOWN": 24,
+        "UNDETERMINED": 33,
+        "CORRECT": 819,
+        "STALE": 13
+      },
+      "correct_rate": 0.9212598425196851,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.014623172103487065,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.02699662542182227,
+      "undetermined_rate": 0.03712035995500562,
+      "retrieval_accuracy": 0.9567757009345794,
+      "safe_abstention_rate": 0.02699662542182227,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 46,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9212598425196851,
+      "latency_p50_s": 0.4463462829589844,
+      "latency_p95_s": 0.47630915641784666,
+      "latency_p99_s": 0.48544570922851565,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 265,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 386.28789806365967
+    },
+    "periodic_aisos_without_authority": {
+      "n_queries": 889,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "UNKNOWN": 24,
+        "UNDETERMINED": 33,
+        "CORRECT": 673,
+        "STALE": 159
+      },
+      "correct_rate": 0.7570303712035995,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.17885264341957255,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.02699662542182227,
+      "undetermined_rate": 0.03712035995500562,
+      "retrieval_accuracy": 0.7862149532710281,
+      "safe_abstention_rate": 0.02699662542182227,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 46,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.7570303712035995,
+      "latency_p50_s": 0.4518253803253174,
+      "latency_p95_s": 0.491651964187622,
+      "latency_p99_s": 0.5163102436065674,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 232,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 385.4810492992401
+    }
+  }
+}

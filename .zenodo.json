@@ -1,0 +1,27 @@
+{
+  "title": "Governing Persistent Agent Memory: code and data (AIEI 2027, paper 1223)",
+  "upload_type": "software",
+  "description": "Code, raw results and checking scripts for the paper 'Governing Persistent Agent Memory: A Causal Study of Authority, Trust, and Recency' (AIEI 2027). CLAIMS.md maps every statement in the paper to its code, result file and check; verify_claims.py re-checks every number.",
+  "creators": [
+    {
+      "name": "V, Sivakumar",
+      "affiliation": "Vellore Institute of Technology"
+    },
+    {
+      "name": "Navadeep, Moram",
+      "affiliation": "Vellore Institute of Technology"
+    },
+    {
+      "name": "Brahmani, Kanderi Neetha",
+      "affiliation": "Vellore Institute of Technology"
+    }
+  ],
+  "keywords": [
+    "persistent agent memory",
+    "memory governance",
+    "causal ablation",
+    "authenticated provenance",
+    "memory poisoning"
+  ],
+  "license": "MIT"
+}

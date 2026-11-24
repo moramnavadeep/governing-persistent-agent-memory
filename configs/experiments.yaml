@@ -1,0 +1,46 @@
+# Per-experiment run parameters (Master Prompt Section 16: "every experiment
+# must have ... configuration files"). aisos/experiments/run_all.py loads
+# this file and passes each block as **kwargs into the matching experiment's
+# main(), so editing seeds/workload sizes here changes what a run actually
+# does without editing experiment source. Every main() also keeps its
+# original Python defaults (identical to the values below) so
+# `python -m aisos.experiments.e1_consistency_longevity` still runs
+# standalone with no config file involved.
+
+workload_defaults:
+  duplicate_rate: 0.15
+  contradiction_rate: 0.10
+  drift_rate: 0.05
+  dt_min: 0.2
+  dt_max: 4.0
+
+e1_consistency_longevity:
+  seeds: [0, 1, 2]
+  n_events: 900
+  n_subjects: 40
+
+e3_adversarial_robustness:
+  seeds: [0, 1, 2]
+  n_events: 300
+  n_subjects: 20
+
+e4_energy_latency:
+  seeds: [0, 1, 2]
+  n_events: 600
+  n_subjects: 30
+
+e5_memory_pollution:
+  seeds: [0, 1, 2]
+  n_events: 350
+  n_subjects: 25
+
+e6_fleet_availability:
+  seeds: [0, 1, 2]
+  n: 8
+  ks: [0, 1, 2, 4]
+  duration_s: 0.8
+
+e7_consolidated_h0_h1:
+  seeds: [0, 1, 2]
+  n_events: 600
+  n_subjects: 30

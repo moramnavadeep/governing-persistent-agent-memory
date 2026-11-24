@@ -1,0 +1,214 @@
+{
+  "manifests": [
+    {
+      "experiment_id": "e8_ablation",
+      "run_id": "seed0_1788191547",
+      "timestamp": 1788191558.5577798,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "67d935b5eea7dcc2d4e164c8d9e4b5b3c1323745eea7e1a5f4bb031895ea2644",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=0 (truncated to 25)",
+      "seed": 0,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos",
+        "periodic_aisos_without_authority"
+      ],
+      "interaction_count": 25,
+      "session_count": 1,
+      "reset_count": 0,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_ablation\\seed_0\\no_sleep_naive_seed0_1788191547.json",
+        "results\\raw\\e8_ablation\\seed_0\\continuous_mvcc_seed0_1788191547.json",
+        "results\\raw\\e8_ablation\\seed_0\\periodic_aisos_seed0_1788191547.json",
+        "results\\raw\\e8_ablation\\seed_0\\periodic_aisos_without_authority_seed0_1788191547.json"
+      ]
+    },
+    {
+      "experiment_id": "e8_ablation",
+      "run_id": "seed0_1788191602",
+      "timestamp": 1788194099.4545407,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "a781f3c0e7ce7fe6aaf5201d26a8231f38adb8e12ca52e6b113f3c10327fc60e",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=0",
+      "seed": 0,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos",
+        "periodic_aisos_without_authority"
+      ],
+      "interaction_count": 1000,
+      "session_count": 20,
+      "reset_count": 19,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_ablation\\seed_0\\no_sleep_naive_seed0_1788191602.json",
+        "results\\raw\\e8_ablation\\seed_0\\continuous_mvcc_seed0_1788191602.json",
+        "results\\raw\\e8_ablation\\seed_0\\periodic_aisos_seed0_1788191602.json",
+        "results\\raw\\e8_ablation\\seed_0\\periodic_aisos_without_authority_seed0_1788191602.json"
+      ]
+    }
+  ],
+  "summaries": {
+    "no_sleep_naive": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 838,
+        "UNDETERMINED": 37,
+        "INCORRECT": 18
+      },
+      "correct_rate": 0.9384098544232923,
+      "incorrect_rate": 0.020156774916013438,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9789719626168224,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 18,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9384098544232923,
+      "latency_p50_s": 0.45990657806396484,
+      "latency_p95_s": 0.4906043529510498,
+      "latency_p99_s": 0.5048237037658692,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 32,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 400.6905071735382
+    },
+    "continuous_mvcc": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 838,
+        "UNDETERMINED": 37,
+        "INCORRECT": 18
+      },
+      "correct_rate": 0.9384098544232923,
+      "incorrect_rate": 0.020156774916013438,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9789719626168224,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 18,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9384098544232923,
+      "latency_p50_s": 0.46007490158081055,
+      "latency_p95_s": 0.5089123725891113,
+      "latency_p99_s": 0.5909521961212162,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 107,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 1488.8316831588745
+    },
+    "periodic_aisos": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "UNKNOWN": 25,
+        "UNDETERMINED": 37,
+        "CORRECT": 813,
+        "STALE": 18
+      },
+      "correct_rate": 0.910414333706607,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.020156774916013438,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.027995520716685332,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9497663551401869,
+      "safe_abstention_rate": 0.027995520716685332,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.910414333706607,
+      "latency_p50_s": 0.3373832702636719,
+      "latency_p95_s": 0.4621207237243652,
+      "latency_p99_s": 0.5399354839324951,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 264,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 305.95261693000793
+    },
+    "periodic_aisos_without_authority": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "UNKNOWN": 25,
+        "UNDETERMINED": 37,
+        "CORRECT": 664,
+        "STALE": 167
+      },
+      "correct_rate": 0.7435610302351624,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.187010078387458,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.027995520716685332,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.7757009345794392,
+      "safe_abstention_rate": 0.027995520716685332,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.7435610302351624,
+      "latency_p50_s": 0.3472437858581543,
+      "latency_p95_s": 0.3752297878265381,
+      "latency_p99_s": 0.38816573143005373,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 231,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 300.84471678733826
+    }
+  }
+}

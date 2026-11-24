@@ -1,0 +1,173 @@
+{
+  "manifests": [
+    {
+      "experiment_id": "e8_mechanism",
+      "run_id": "seed1_1788230320",
+      "timestamp": 1788231537.5095305,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "2c613afe1a1f2890ea5a390d8170149af3b91ea5a0fade915ad87409b9b65aa0",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=1",
+      "seed": 1,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos",
+        "periodic_aisos_without_trust_tier"
+      ],
+      "interaction_count": 1000,
+      "session_count": 20,
+      "reset_count": 19,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_mechanism\\seed_1\\no_sleep_naive_seed1_1788230320.json",
+        "results\\raw\\e8_mechanism\\seed_1\\continuous_mvcc_seed1_1788230320.json",
+        "results\\raw\\e8_mechanism\\seed_1\\periodic_aisos_seed1_1788230320.json",
+        "results\\raw\\e8_mechanism\\seed_1\\periodic_aisos_without_trust_tier_seed1_1788230320.json"
+      ]
+    }
+  ],
+  "summaries": {
+    "no_sleep_naive": {
+      "n_queries": 887,
+      "n_evaluated": 855,
+      "verdict_counts": {
+        "CORRECT": 842,
+        "UNDETERMINED": 32,
+        "INCORRECT": 13
+      },
+      "correct_rate": 0.9492671927846674,
+      "incorrect_rate": 0.014656144306651634,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.036076662908680945,
+      "retrieval_accuracy": 0.9847953216374269,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 13,
+      "n_dangerous_contradiction_errors": 13,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9492671927846674,
+      "latency_p50_s": 0.3476085662841797,
+      "latency_p95_s": 0.3734553337097168,
+      "latency_p99_s": 0.3845780658721924,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 32,
+      "model_calls": 887,
+      "n_failures": 0,
+      "wall_time_s": 302.46578073501587
+    },
+    "continuous_mvcc": {
+      "n_queries": 887,
+      "n_evaluated": 855,
+      "verdict_counts": {
+        "CORRECT": 842,
+        "UNDETERMINED": 32,
+        "INCORRECT": 13
+      },
+      "correct_rate": 0.9492671927846674,
+      "incorrect_rate": 0.014656144306651634,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.036076662908680945,
+      "retrieval_accuracy": 0.9847953216374269,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 13,
+      "n_dangerous_contradiction_errors": 13,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9492671927846674,
+      "latency_p50_s": 0.3503706455230713,
+      "latency_p95_s": 0.374440336227417,
+      "latency_p99_s": 0.3804365587234497,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 113,
+      "model_calls": 887,
+      "n_failures": 0,
+      "wall_time_s": 305.4928319454193
+    },
+    "periodic_aisos": {
+      "n_queries": 887,
+      "n_evaluated": 855,
+      "verdict_counts": {
+        "UNKNOWN": 25,
+        "UNDETERMINED": 32,
+        "CORRECT": 813,
+        "STALE": 17
+      },
+      "correct_rate": 0.9165727170236753,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.019165727170236752,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.02818489289740699,
+      "undetermined_rate": 0.036076662908680945,
+      "retrieval_accuracy": 0.9508771929824561,
+      "safe_abstention_rate": 0.02818489289740699,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 13,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9165727170236753,
+      "latency_p50_s": 0.35207414627075195,
+      "latency_p95_s": 0.3741781234741211,
+      "latency_p99_s": 0.38196768760681155,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 267,
+      "model_calls": 887,
+      "n_failures": 0,
+      "wall_time_s": 302.86610651016235
+    },
+    "periodic_aisos_without_trust_tier": {
+      "n_queries": 887,
+      "n_evaluated": 855,
+      "verdict_counts": {
+        "UNKNOWN": 25,
+        "UNDETERMINED": 32,
+        "CORRECT": 588,
+        "STALE": 242
+      },
+      "correct_rate": 0.6629086809470124,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.27282976324689967,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.02818489289740699,
+      "undetermined_rate": 0.036076662908680945,
+      "retrieval_accuracy": 0.6877192982456141,
+      "safe_abstention_rate": 0.02818489289740699,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 13,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.6629086809470124,
+      "latency_p50_s": 0.35453319549560547,
+      "latency_p95_s": 0.3800800323486328,
+      "latency_p99_s": 0.3896316576004028,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 234,
+      "model_calls": 887,
+      "n_failures": 0,
+      "wall_time_s": 306.08688259124756
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_id": "e8_confirmatory",
+  "seeds": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "conditions": [
+    "no_sleep_naive",
+    "continuous_mvcc",
+    "periodic_aisos"
+  ],
+  "max_interactions": null,
+  "total_wall_time_s": 10266.500945568085,
+  "seed_dirs": [
+    "results\\raw\\e8_confirmatory\\seed_22",
+    "results\\raw\\e8_confirmatory\\seed_23",
+    "results\\raw\\e8_confirmatory\\seed_24",
+    "results\\raw\\e8_confirmatory\\seed_25",
+    "results\\raw\\e8_confirmatory\\seed_26",
+    "results\\raw\\e8_confirmatory\\seed_27",
+    "results\\raw\\e8_confirmatory\\seed_28",
+    "results\\raw\\e8_confirmatory\\seed_29"
+  ]
+}

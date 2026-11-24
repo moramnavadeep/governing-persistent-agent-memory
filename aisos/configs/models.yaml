@@ -1,0 +1,17 @@
+# "Model"-facing parameters (Master Prompt Section 27): the surrogate
+# theta/embedding/dream configuration this reference implementation uses in
+# place of a real LLM (README's "What this is, and isn't" section). Swapping
+# a real model in later means changing theta_dims to match that model's
+# adapter-parameter shape and wiring a real score_fn into dream_phase(),
+# not touching the rest of the pipeline.
+
+theta_dims: 8
+
+embedding:
+  dims: 16   # aisos/memory/record.py::_pseudo_embedding
+
+dream:
+  n_seeds: 10
+  clip_bound: 0.05
+  lr: 0.02
+  calibration_threshold: 0.6

@@ -1,0 +1,11 @@
+# Versions used to produce and re-verify the results in this repository (Python 3.13).
+# Lower versions will probably work but have not been tested.
+PyYAML==6.0.3
+requests==2.34.2        # OllamaBackend (only for the real-model experiments)
+numpy==2.4.4
+scipy==1.18.0
+scikit-learn==1.9.0     # hashing embedder used by the independent benchmark
+chromadb==1.5.9         # vector store of the "standard RAG" baseline in the independent benchmark
+psutil==7.2.2
+matplotlib==3.11.1      # Fig. 1
+pytest==9.1.1

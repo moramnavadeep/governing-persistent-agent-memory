@@ -1,0 +1,178 @@
+{
+  "manifests": [
+    {
+      "experiment_id": "e8_confirmatory",
+      "run_id": "seed0_1788184245",
+      "timestamp": 1788184250.511863,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "67d935b5eea7dcc2d4e164c8d9e4b5b3c1323745eea7e1a5f4bb031895ea2644",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=0 (truncated to 25)",
+      "seed": 0,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos"
+      ],
+      "interaction_count": 25,
+      "session_count": 1,
+      "reset_count": 0,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_confirmatory\\seed_0\\no_sleep_naive_seed0_1788184245.json",
+        "results\\raw\\e8_confirmatory\\seed_0\\continuous_mvcc_seed0_1788184245.json",
+        "results\\raw\\e8_confirmatory\\seed_0\\periodic_aisos_seed0_1788184245.json"
+      ]
+    },
+    {
+      "experiment_id": "e8_confirmatory",
+      "run_id": "seed0_1788184284",
+      "timestamp": 1788185411.3285174,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "a781f3c0e7ce7fe6aaf5201d26a8231f38adb8e12ca52e6b113f3c10327fc60e",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.33.2",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=0",
+      "seed": 0,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos"
+      ],
+      "interaction_count": 1000,
+      "session_count": 20,
+      "reset_count": 19,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_confirmatory\\seed_0\\no_sleep_naive_seed0_1788184284.json",
+        "results\\raw\\e8_confirmatory\\seed_0\\continuous_mvcc_seed0_1788184284.json",
+        "results\\raw\\e8_confirmatory\\seed_0\\periodic_aisos_seed0_1788184284.json"
+      ]
+    }
+  ],
+  "summaries": {
+    "no_sleep_naive": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 838,
+        "UNDETERMINED": 37,
+        "INCORRECT": 18
+      },
+      "correct_rate": 0.9384098544232923,
+      "incorrect_rate": 0.020156774916013438,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9789719626168224,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 18,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9384098544232923,
+      "latency_p50_s": 0.4539797306060791,
+      "latency_p95_s": 0.5027580738067626,
+      "latency_p99_s": 0.55956356048584,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 32,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 397.43079590797424
+    },
+    "continuous_mvcc": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "CORRECT": 838,
+        "UNDETERMINED": 37,
+        "INCORRECT": 18
+      },
+      "correct_rate": 0.9384098544232923,
+      "incorrect_rate": 0.020156774916013438,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9789719626168224,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 18,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9384098544232923,
+      "latency_p50_s": 0.4561460018157959,
+      "latency_p95_s": 0.49126548767089845,
+      "latency_p99_s": 0.5052219200134278,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 107,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 398.0506155490875
+    },
+    "periodic_aisos": {
+      "n_queries": 893,
+      "n_evaluated": 856,
+      "verdict_counts": {
+        "UNKNOWN": 25,
+        "UNDETERMINED": 37,
+        "CORRECT": 813,
+        "STALE": 18
+      },
+      "correct_rate": 0.910414333706607,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.020156774916013438,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.027995520716685332,
+      "undetermined_rate": 0.04143337066069429,
+      "retrieval_accuracy": 0.9497663551401869,
+      "safe_abstention_rate": 0.027995520716685332,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 18,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.910414333706607,
+      "latency_p50_s": 0.34783053398132324,
+      "latency_p95_s": 0.47809205055236814,
+      "latency_p99_s": 0.48948124885559086,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 264,
+      "model_calls": 893,
+      "n_failures": 0,
+      "wall_time_s": 331.3364152908325
+    }
+  }
+}

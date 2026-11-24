@@ -1,0 +1,186 @@
+{
+  "W3_malicious_contradiction": {
+    "A_recency_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "dream_seeds_0_control": {
+        "read": "ATTACK",
+        "all_values": [
+          "ATTACK"
+        ],
+        "attack_success": true
+      },
+      "genuine_comparator_driven_protection": false,
+      "protection_is_dream_noise_confound": true
+    },
+    "B_trust_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "C_authority_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "D_authority_trust_no_recency": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "E_full": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "attack_success": false
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    }
+  },
+  "W4_high_confidence_false": {
+    "A_recency_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "dream_seeds_0_control": {
+        "read": "FALSE_HIGH_CONF",
+        "all_values": [
+          "FALSE_HIGH_CONF"
+        ],
+        "authority_protected_retrieval": false
+      },
+      "genuine_comparator_driven_protection": false,
+      "protection_is_dream_noise_confound": true
+    },
+    "B_trust_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "C_authority_only": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "D_authority_trust_no_recency": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    },
+    "E_full": {
+      "dream_seeds_4_default": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "dream_seeds_0_control": {
+        "read": "TRUE",
+        "all_values": [
+          "TRUE"
+        ],
+        "authority_protected_retrieval": true
+      },
+      "genuine_comparator_driven_protection": true,
+      "protection_is_dream_noise_confound": false
+    }
+  }
+}

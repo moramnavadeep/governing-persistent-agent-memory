@@ -1,0 +1,25 @@
+{
+  "experiment_id": "e8_ablation",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "no_sleep_naive",
+    "continuous_mvcc",
+    "periodic_aisos",
+    "periodic_aisos_without_authority"
+  ],
+  "max_interactions": null,
+  "total_wall_time_s": 7519.449337244034,
+  "seed_dirs": [
+    "results\\raw\\e8_ablation\\seed_0",
+    "results\\raw\\e8_ablation\\seed_1",
+    "results\\raw\\e8_ablation\\seed_2",
+    "results\\raw\\e8_ablation\\seed_3",
+    "results\\raw\\e8_ablation\\seed_4"
+  ]
+}

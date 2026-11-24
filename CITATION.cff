@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this archived release."
+title: "Governing Persistent Agent Memory: code and data"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/moramnavadeep/governing-persistent-agent-memory"
+doi: "10.5281/zenodo.XXXXXXX"
+authors:
+  - name: "Sivakumar V"
+    affiliation: "Vellore Institute of Technology"
+  - name: "Moram Navadeep"
+    affiliation: "Vellore Institute of Technology"
+  - name: "Kanderi Neetha Brahmani"
+    affiliation: "Vellore Institute of Technology"
+preferred-citation:
+  type: conference-paper
+  title: "Governing Persistent Agent Memory: A Causal Study of Authority, Trust, and Recency"
+  authors:
+    - name: "Sivakumar V"
+    - name: "Moram Navadeep"
+    - name: "Kanderi Neetha Brahmani"
+  conference:
+    name: "AIEI 2027"
+  year: 2027

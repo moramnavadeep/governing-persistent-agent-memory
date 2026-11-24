@@ -1,0 +1,138 @@
+{
+  "manifests": [
+    {
+      "experiment_id": "e8_confirmatory",
+      "run_id": "seed28_1789546343",
+      "timestamp": 1789547258.128155,
+      "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+      "workload_hash": "301d5a32b326ea2b7948b0e182054baa5d61560b8505edaeea9eb5343e32322a",
+      "model": "ollama:llama3:latest",
+      "model_version": "llama3:latest (Ollama local)",
+      "model_parameters": {
+        "temperature": 0.0,
+        "host": "http://localhost:11434",
+        "timeout_s": 60.0
+      },
+      "ollama_version": "ollama version is 0.34.0",
+      "dependency_versions": {
+        "requests": "2.34.2",
+        "psutil": "7.2.2",
+        "matplotlib": "3.11.1",
+        "PyYAML": "6.0.3"
+      },
+      "workload_version": "workload_1000.py seed=28",
+      "seed": 28,
+      "conditions": [
+        "no_sleep_naive",
+        "continuous_mvcc",
+        "periodic_aisos"
+      ],
+      "interaction_count": 1000,
+      "session_count": 20,
+      "reset_count": 19,
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "status": "PRELIMINARY -- see docs/reproducibility.md",
+      "output_paths": [
+        "results\\raw\\e8_confirmatory\\seed_28\\no_sleep_naive_seed28_1789546343.json",
+        "results\\raw\\e8_confirmatory\\seed_28\\continuous_mvcc_seed28_1789546343.json",
+        "results\\raw\\e8_confirmatory\\seed_28\\periodic_aisos_seed28_1789546343.json"
+      ]
+    }
+  ],
+  "summaries": {
+    "no_sleep_naive": {
+      "n_queries": 889,
+      "n_evaluated": 873,
+      "verdict_counts": {
+        "CORRECT": 852,
+        "UNDETERMINED": 16,
+        "INCORRECT": 21
+      },
+      "correct_rate": 0.9583802024746907,
+      "incorrect_rate": 0.023622047244094488,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.01799775028121485,
+      "retrieval_accuracy": 0.9759450171821306,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 21,
+      "n_dangerous_contradiction_errors": 21,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9583802024746907,
+      "latency_p50_s": 0.3460531234741211,
+      "latency_p95_s": 0.38377366065979,
+      "latency_p99_s": 0.39774308204650877,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 32,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 304.1375026702881
+    },
+    "continuous_mvcc": {
+      "n_queries": 889,
+      "n_evaluated": 873,
+      "verdict_counts": {
+        "CORRECT": 852,
+        "UNDETERMINED": 16,
+        "INCORRECT": 21
+      },
+      "correct_rate": 0.9583802024746907,
+      "incorrect_rate": 0.023622047244094488,
+      "stale_rate": 0.0,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.01799775028121485,
+      "retrieval_accuracy": 0.9759450171821306,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 1.0,
+      "n_contradictory_category_queries": 21,
+      "n_dangerous_contradiction_errors": 21,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9583802024746907,
+      "latency_p50_s": 0.3404362201690674,
+      "latency_p95_s": 0.37973475456237793,
+      "latency_p99_s": 0.41488722801208494,
+      "cycles_run": 0,
+      "rollback_count": null,
+      "final_store_size": 111,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 301.96881556510925
+    },
+    "periodic_aisos": {
+      "n_queries": 889,
+      "n_evaluated": 873,
+      "verdict_counts": {
+        "CORRECT": 858,
+        "UNDETERMINED": 16,
+        "STALE": 15
+      },
+      "correct_rate": 0.9651293588301463,
+      "incorrect_rate": 0.0,
+      "stale_rate": 0.01687289088863892,
+      "contradictory_rate": 0.0,
+      "unknown_rate": 0.0,
+      "undetermined_rate": 0.01799775028121485,
+      "retrieval_accuracy": 0.9828178694158075,
+      "safe_abstention_rate": 0.0,
+      "dangerous_contradiction_error_rate": 0.0,
+      "n_contradictory_category_queries": 21,
+      "n_dangerous_contradiction_errors": 0,
+      "contradiction_rate": 0.0,
+      "task_success_rate": 0.9651293588301463,
+      "latency_p50_s": 0.3492774963378906,
+      "latency_p95_s": 0.3794198989868164,
+      "latency_p99_s": 0.39151997566223146,
+      "cycles_run": 66,
+      "rollback_count": 0,
+      "final_store_size": 69,
+      "model_calls": 889,
+      "n_failures": 0,
+      "wall_time_s": 308.77087926864624
+    }
+  }
+}

@@ -1,0 +1,1836 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "no_sleep_naive",
+    "continuous_mvcc",
+    "periodic_aisos",
+    "periodic_aisos_without_trust_tier"
+  ],
+  "statistical_unit": "workload seed (n=5)",
+  "primary_comparisons": {
+    "periodic_vs_trust_tier_ablated__dangerous_contradiction_error_rate": {
+      "metric": "dangerous_contradiction_error_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "periodic_aisos_without_trust_tier",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.0,
+          "periodic_aisos_without_trust_tier": 0.0
+        },
+        "1": {
+          "periodic_aisos": 0.0,
+          "periodic_aisos_without_trust_tier": 0.0
+        },
+        "2": {
+          "periodic_aisos": 0.0,
+          "periodic_aisos_without_trust_tier": 0.0
+        },
+        "3": {
+          "periodic_aisos": 0.0,
+          "periodic_aisos_without_trust_tier": 0.0
+        },
+        "4": {
+          "periodic_aisos": 0.0,
+          "periodic_aisos_without_trust_tier": 0.0
+        }
+      },
+      "mean_a": 0.0,
+      "mean_b": 0.0,
+      "absolute_difference": 0.0,
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "stdev": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wilcoxon": {
+        "statistic": null,
+        "p_value": null,
+        "n_nonzero": 0,
+        "note": "all paired differences are exactly zero -- degenerate, not evidence of no effect"
+      }
+    }
+  },
+  "secondary_comparisons": {
+    "periodic_aisos_without_trust_tier_vs_no_sleep_naive__dangerous_contradiction_error_rate": {
+      "metric": "dangerous_contradiction_error_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "no_sleep_naive": 1.0
+        }
+      },
+      "mean_a": 0.0,
+      "mean_b": 1.0,
+      "absolute_difference": -1.0,
+      "bootstrap": {
+        "mean": -1.0,
+        "median": -1.0,
+        "stdev": 0.0,
+        "ci_low": -1.0,
+        "ci_high": -1.0,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15.0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_continuous_mvcc__dangerous_contradiction_error_rate": {
+      "metric": "dangerous_contradiction_error_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.0,
+          "continuous_mvcc": 1.0
+        }
+      },
+      "mean_a": 0.0,
+      "mean_b": 1.0,
+      "absolute_difference": -1.0,
+      "bootstrap": {
+        "mean": -1.0,
+        "median": -1.0,
+        "stdev": 0.0,
+        "ci_low": -1.0,
+        "ci_high": -1.0,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15.0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_no_sleep_naive__dangerous_contradiction_error_rate": {
+      "metric": "dangerous_contradiction_error_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "1": {
+          "periodic_aisos": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "2": {
+          "periodic_aisos": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "3": {
+          "periodic_aisos": 0.0,
+          "no_sleep_naive": 1.0
+        },
+        "4": {
+          "periodic_aisos": 0.0,
+          "no_sleep_naive": 1.0
+        }
+      },
+      "mean_a": 0.0,
+      "mean_b": 1.0,
+      "absolute_difference": -1.0,
+      "bootstrap": {
+        "mean": -1.0,
+        "median": -1.0,
+        "stdev": 0.0,
+        "ci_low": -1.0,
+        "ci_high": -1.0,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15.0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_continuous_mvcc__dangerous_contradiction_error_rate": {
+      "metric": "dangerous_contradiction_error_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "1": {
+          "periodic_aisos": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "2": {
+          "periodic_aisos": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "3": {
+          "periodic_aisos": 0.0,
+          "continuous_mvcc": 1.0
+        },
+        "4": {
+          "periodic_aisos": 0.0,
+          "continuous_mvcc": 1.0
+        }
+      },
+      "mean_a": 0.0,
+      "mean_b": 1.0,
+      "absolute_difference": -1.0,
+      "bootstrap": {
+        "mean": -1.0,
+        "median": -1.0,
+        "stdev": 0.0,
+        "ci_low": -1.0,
+        "ci_high": -1.0,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15.0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_no_sleep_naive__retrieval_accuracy": {
+      "metric": "retrieval_accuracy",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.7757009345794392,
+          "no_sleep_naive": 0.9789719626168224
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.6877192982456141,
+          "no_sleep_naive": 0.9847953216374269
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.5997706422018348,
+          "no_sleep_naive": 0.9644495412844036
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.7084785133565621,
+          "no_sleep_naive": 0.9639953542392566
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.7862149532710281,
+          "no_sleep_naive": 0.9462616822429907
+        }
+      },
+      "mean_a": 0.7115768683308956,
+      "mean_b": 0.96769477240418,
+      "absolute_difference": -0.2561179040732844,
+      "bootstrap": {
+        "mean": -0.2561179040732844,
+        "median": -0.25551684088269455,
+        "stdev": 0.07982149059711068,
+        "ci_low": -0.3188767497353805,
+        "ci_high": -0.19609744766901677,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -0.20327102803738317,
+          -0.2970760233918128,
+          -0.3646788990825688,
+          -0.25551684088269455,
+          -0.1600467289719626
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_continuous_mvcc__retrieval_accuracy": {
+      "metric": "retrieval_accuracy",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.7757009345794392,
+          "continuous_mvcc": 0.9789719626168224
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.6877192982456141,
+          "continuous_mvcc": 0.9847953216374269
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.5997706422018348,
+          "continuous_mvcc": 0.9644495412844036
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.7084785133565621,
+          "continuous_mvcc": 0.9639953542392566
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.7862149532710281,
+          "continuous_mvcc": 0.9462616822429907
+        }
+      },
+      "mean_a": 0.7115768683308956,
+      "mean_b": 0.96769477240418,
+      "absolute_difference": -0.2561179040732844,
+      "bootstrap": {
+        "mean": -0.2561179040732844,
+        "median": -0.25551684088269455,
+        "stdev": 0.07982149059711068,
+        "ci_low": -0.3188767497353805,
+        "ci_high": -0.19609744766901677,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -0.20327102803738317,
+          -0.2970760233918128,
+          -0.3646788990825688,
+          -0.25551684088269455,
+          -0.1600467289719626
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 0,
+        "w_minus": 15,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_no_sleep_naive__retrieval_accuracy": {
+      "metric": "retrieval_accuracy",
+      "condition_a": "periodic_aisos",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.9497663551401869,
+          "no_sleep_naive": 0.9789719626168224
+        },
+        "1": {
+          "periodic_aisos": 0.9508771929824561,
+          "no_sleep_naive": 0.9847953216374269
+        },
+        "2": {
+          "periodic_aisos": 0.9518348623853211,
+          "no_sleep_naive": 0.9644495412844036
+        },
+        "3": {
+          "periodic_aisos": 0.9547038327526133,
+          "no_sleep_naive": 0.9639953542392566
+        },
+        "4": {
+          "periodic_aisos": 0.9567757009345794,
+          "no_sleep_naive": 0.9462616822429907
+        }
+      },
+      "mean_a": 0.9527915888390314,
+      "mean_b": 0.96769477240418,
+      "absolute_difference": -0.014903183565148682,
+      "bootstrap": {
+        "mean": -0.014903183565148682,
+        "median": -0.012614678899082521,
+        "stdev": 0.01766981636833458,
+        "ci_low": -0.028050302985638244,
+        "ci_high": -0.0013910145777025207,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -0.029205607476635476,
+          -0.03391812865497079,
+          -0.012614678899082521,
+          -0.009291521486643362,
+          0.010514018691588745
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 2,
+        "w_plus": 2,
+        "w_minus": 13,
+        "n_nonzero": 5,
+        "p_value": 0.1875,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_continuous_mvcc__retrieval_accuracy": {
+      "metric": "retrieval_accuracy",
+      "condition_a": "periodic_aisos",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.9497663551401869,
+          "continuous_mvcc": 0.9789719626168224
+        },
+        "1": {
+          "periodic_aisos": 0.9508771929824561,
+          "continuous_mvcc": 0.9847953216374269
+        },
+        "2": {
+          "periodic_aisos": 0.9518348623853211,
+          "continuous_mvcc": 0.9644495412844036
+        },
+        "3": {
+          "periodic_aisos": 0.9547038327526133,
+          "continuous_mvcc": 0.9639953542392566
+        },
+        "4": {
+          "periodic_aisos": 0.9567757009345794,
+          "continuous_mvcc": 0.9462616822429907
+        }
+      },
+      "mean_a": 0.9527915888390314,
+      "mean_b": 0.96769477240418,
+      "absolute_difference": -0.014903183565148682,
+      "bootstrap": {
+        "mean": -0.014903183565148682,
+        "median": -0.012614678899082521,
+        "stdev": 0.01766981636833458,
+        "ci_low": -0.028050302985638244,
+        "ci_high": -0.0013910145777025207,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          -0.029205607476635476,
+          -0.03391812865497079,
+          -0.012614678899082521,
+          -0.009291521486643362,
+          0.010514018691588745
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 2,
+        "w_plus": 2,
+        "w_minus": 13,
+        "n_nonzero": 5,
+        "p_value": 0.1875,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_no_sleep_naive__stale_rate": {
+      "metric": "stale_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.187010078387458,
+          "no_sleep_naive": 0.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.27282976324689967,
+          "no_sleep_naive": 0.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.36363636363636365,
+          "no_sleep_naive": 0.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.2550561797752809,
+          "no_sleep_naive": 0.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.17885264341957255,
+          "no_sleep_naive": 0.0
+        }
+      },
+      "mean_a": 0.25147700569311493,
+      "mean_b": 0.0,
+      "absolute_difference": 0.25147700569311493,
+      "bootstrap": {
+        "mean": 0.25147700569311493,
+        "median": 0.2550561797752809,
+        "stdev": 0.0749645833516977,
+        "ci_low": 0.1973563246778684,
+        "ci_high": 0.31014978650868974,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.187010078387458,
+          0.27282976324689967,
+          0.36363636363636365,
+          0.2550561797752809,
+          0.17885264341957255
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_continuous_mvcc__stale_rate": {
+      "metric": "stale_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.187010078387458,
+          "continuous_mvcc": 0.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.27282976324689967,
+          "continuous_mvcc": 0.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.36363636363636365,
+          "continuous_mvcc": 0.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.2550561797752809,
+          "continuous_mvcc": 0.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.17885264341957255,
+          "continuous_mvcc": 0.0
+        }
+      },
+      "mean_a": 0.25147700569311493,
+      "mean_b": 0.0,
+      "absolute_difference": 0.25147700569311493,
+      "bootstrap": {
+        "mean": 0.25147700569311493,
+        "median": 0.2550561797752809,
+        "stdev": 0.0749645833516977,
+        "ci_low": 0.1973563246778684,
+        "ci_high": 0.31014978650868974,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.187010078387458,
+          0.27282976324689967,
+          0.36363636363636365,
+          0.2550561797752809,
+          0.17885264341957255
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_no_sleep_naive__stale_rate": {
+      "metric": "stale_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.020156774916013438,
+          "no_sleep_naive": 0.0
+        },
+        "1": {
+          "periodic_aisos": 0.019165727170236752,
+          "no_sleep_naive": 0.0
+        },
+        "2": {
+          "periodic_aisos": 0.019079685746352413,
+          "no_sleep_naive": 0.0
+        },
+        "3": {
+          "periodic_aisos": 0.016853932584269662,
+          "no_sleep_naive": 0.0
+        },
+        "4": {
+          "periodic_aisos": 0.014623172103487065,
+          "no_sleep_naive": 0.0
+        }
+      },
+      "mean_a": 0.017975858504071865,
+      "mean_b": 0.0,
+      "absolute_difference": 0.017975858504071865,
+      "bootstrap": {
+        "mean": 0.017975858504071865,
+        "median": 0.019079685746352413,
+        "stdev": 0.002229901471454965,
+        "ci_low": 0.01617604476214886,
+        "ci_high": 0.01954493798377056,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.020156774916013438,
+          0.019165727170236752,
+          0.019079685746352413,
+          0.016853932584269662,
+          0.014623172103487065
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_continuous_mvcc__stale_rate": {
+      "metric": "stale_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.020156774916013438,
+          "continuous_mvcc": 0.0
+        },
+        "1": {
+          "periodic_aisos": 0.019165727170236752,
+          "continuous_mvcc": 0.0
+        },
+        "2": {
+          "periodic_aisos": 0.019079685746352413,
+          "continuous_mvcc": 0.0
+        },
+        "3": {
+          "periodic_aisos": 0.016853932584269662,
+          "continuous_mvcc": 0.0
+        },
+        "4": {
+          "periodic_aisos": 0.014623172103487065,
+          "continuous_mvcc": 0.0
+        }
+      },
+      "mean_a": 0.017975858504071865,
+      "mean_b": 0.0,
+      "absolute_difference": 0.017975858504071865,
+      "bootstrap": {
+        "mean": 0.017975858504071865,
+        "median": 0.019079685746352413,
+        "stdev": 0.002229901471454965,
+        "ci_low": 0.01617604476214886,
+        "ci_high": 0.01954493798377056,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.020156774916013438,
+          0.019165727170236752,
+          0.019079685746352413,
+          0.016853932584269662,
+          0.014623172103487065
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_no_sleep_naive__unknown_rate": {
+      "metric": "unknown_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.027995520716685332,
+          "no_sleep_naive": 0.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.02818489289740699,
+          "no_sleep_naive": 0.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.028058361391694726,
+          "no_sleep_naive": 0.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.02696629213483146,
+          "no_sleep_naive": 0.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.02699662542182227,
+          "no_sleep_naive": 0.0
+        }
+      },
+      "mean_a": 0.027640338512488156,
+      "mean_b": 0.0,
+      "absolute_difference": 0.027640338512488156,
+      "bootstrap": {
+        "mean": 0.027640338512488156,
+        "median": 0.027995520716685332,
+        "stdev": 0.0006054217674851929,
+        "ci_low": 0.027184271165998558,
+        "ci_high": 0.02809640585897775,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.027995520716685332,
+          0.02818489289740699,
+          0.028058361391694726,
+          0.02696629213483146,
+          0.02699662542182227
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_continuous_mvcc__unknown_rate": {
+      "metric": "unknown_rate",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 0.027995520716685332,
+          "continuous_mvcc": 0.0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 0.02818489289740699,
+          "continuous_mvcc": 0.0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 0.028058361391694726,
+          "continuous_mvcc": 0.0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 0.02696629213483146,
+          "continuous_mvcc": 0.0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 0.02699662542182227,
+          "continuous_mvcc": 0.0
+        }
+      },
+      "mean_a": 0.027640338512488156,
+      "mean_b": 0.0,
+      "absolute_difference": 0.027640338512488156,
+      "bootstrap": {
+        "mean": 0.027640338512488156,
+        "median": 0.027995520716685332,
+        "stdev": 0.0006054217674851929,
+        "ci_low": 0.027184271165998558,
+        "ci_high": 0.02809640585897775,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.027995520716685332,
+          0.02818489289740699,
+          0.028058361391694726,
+          0.02696629213483146,
+          0.02699662542182227
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_no_sleep_naive__unknown_rate": {
+      "metric": "unknown_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.027995520716685332,
+          "no_sleep_naive": 0.0
+        },
+        "1": {
+          "periodic_aisos": 0.02818489289740699,
+          "no_sleep_naive": 0.0
+        },
+        "2": {
+          "periodic_aisos": 0.028058361391694726,
+          "no_sleep_naive": 0.0
+        },
+        "3": {
+          "periodic_aisos": 0.02696629213483146,
+          "no_sleep_naive": 0.0
+        },
+        "4": {
+          "periodic_aisos": 0.02699662542182227,
+          "no_sleep_naive": 0.0
+        }
+      },
+      "mean_a": 0.027640338512488156,
+      "mean_b": 0.0,
+      "absolute_difference": 0.027640338512488156,
+      "bootstrap": {
+        "mean": 0.027640338512488156,
+        "median": 0.027995520716685332,
+        "stdev": 0.0006054217674851929,
+        "ci_low": 0.027184271165998558,
+        "ci_high": 0.02809640585897775,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.027995520716685332,
+          0.02818489289740699,
+          0.028058361391694726,
+          0.02696629213483146,
+          0.02699662542182227
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_continuous_mvcc__unknown_rate": {
+      "metric": "unknown_rate",
+      "condition_a": "periodic_aisos",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 0.027995520716685332,
+          "continuous_mvcc": 0.0
+        },
+        "1": {
+          "periodic_aisos": 0.02818489289740699,
+          "continuous_mvcc": 0.0
+        },
+        "2": {
+          "periodic_aisos": 0.028058361391694726,
+          "continuous_mvcc": 0.0
+        },
+        "3": {
+          "periodic_aisos": 0.02696629213483146,
+          "continuous_mvcc": 0.0
+        },
+        "4": {
+          "periodic_aisos": 0.02699662542182227,
+          "continuous_mvcc": 0.0
+        }
+      },
+      "mean_a": 0.027640338512488156,
+      "mean_b": 0.0,
+      "absolute_difference": 0.027640338512488156,
+      "bootstrap": {
+        "mean": 0.027640338512488156,
+        "median": 0.027995520716685332,
+        "stdev": 0.0006054217674851929,
+        "ci_low": 0.027184271165998558,
+        "ci_high": 0.02809640585897775,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          0.027995520716685332,
+          0.02818489289740699,
+          0.028058361391694726,
+          0.02696629213483146,
+          0.02699662542182227
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_no_sleep_naive__cycles_run": {
+      "metric": "cycles_run",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 66,
+          "no_sleep_naive": 0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 66,
+          "no_sleep_naive": 0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 66,
+          "no_sleep_naive": 0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 66,
+          "no_sleep_naive": 0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 66,
+          "no_sleep_naive": 0
+        }
+      },
+      "mean_a": 66,
+      "mean_b": 0,
+      "absolute_difference": 66,
+      "bootstrap": {
+        "mean": 66,
+        "median": 66,
+        "stdev": 0.0,
+        "ci_low": 66,
+        "ci_high": 66,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          66,
+          66,
+          66,
+          66,
+          66
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15.0,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_without_trust_tier_vs_continuous_mvcc__cycles_run": {
+      "metric": "cycles_run",
+      "condition_a": "periodic_aisos_without_trust_tier",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos_without_trust_tier": 66,
+          "continuous_mvcc": 0
+        },
+        "1": {
+          "periodic_aisos_without_trust_tier": 66,
+          "continuous_mvcc": 0
+        },
+        "2": {
+          "periodic_aisos_without_trust_tier": 66,
+          "continuous_mvcc": 0
+        },
+        "3": {
+          "periodic_aisos_without_trust_tier": 66,
+          "continuous_mvcc": 0
+        },
+        "4": {
+          "periodic_aisos_without_trust_tier": 66,
+          "continuous_mvcc": 0
+        }
+      },
+      "mean_a": 66,
+      "mean_b": 0,
+      "absolute_difference": 66,
+      "bootstrap": {
+        "mean": 66,
+        "median": 66,
+        "stdev": 0.0,
+        "ci_low": 66,
+        "ci_high": 66,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          66,
+          66,
+          66,
+          66,
+          66
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15.0,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_no_sleep_naive__cycles_run": {
+      "metric": "cycles_run",
+      "condition_a": "periodic_aisos",
+      "condition_b": "no_sleep_naive",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 66,
+          "no_sleep_naive": 0
+        },
+        "1": {
+          "periodic_aisos": 66,
+          "no_sleep_naive": 0
+        },
+        "2": {
+          "periodic_aisos": 66,
+          "no_sleep_naive": 0
+        },
+        "3": {
+          "periodic_aisos": 66,
+          "no_sleep_naive": 0
+        },
+        "4": {
+          "periodic_aisos": 66,
+          "no_sleep_naive": 0
+        }
+      },
+      "mean_a": 66,
+      "mean_b": 0,
+      "absolute_difference": 66,
+      "bootstrap": {
+        "mean": 66,
+        "median": 66,
+        "stdev": 0.0,
+        "ci_low": 66,
+        "ci_high": 66,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          66,
+          66,
+          66,
+          66,
+          66
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15.0,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    },
+    "periodic_aisos_vs_continuous_mvcc__cycles_run": {
+      "metric": "cycles_run",
+      "condition_a": "periodic_aisos",
+      "condition_b": "continuous_mvcc",
+      "per_seed": {
+        "0": {
+          "periodic_aisos": 66,
+          "continuous_mvcc": 0
+        },
+        "1": {
+          "periodic_aisos": 66,
+          "continuous_mvcc": 0
+        },
+        "2": {
+          "periodic_aisos": 66,
+          "continuous_mvcc": 0
+        },
+        "3": {
+          "periodic_aisos": 66,
+          "continuous_mvcc": 0
+        },
+        "4": {
+          "periodic_aisos": 66,
+          "continuous_mvcc": 0
+        }
+      },
+      "mean_a": 66,
+      "mean_b": 0,
+      "absolute_difference": 66,
+      "bootstrap": {
+        "mean": 66,
+        "median": 66,
+        "stdev": 0.0,
+        "ci_low": 66,
+        "ci_high": 66,
+        "confidence_level": 0.95,
+        "n": 5,
+        "n_resamples": 10000,
+        "resample_seed": 12345,
+        "per_seed_values": [
+          66,
+          66,
+          66,
+          66,
+          66
+        ]
+      },
+      "wilcoxon": {
+        "statistic": 0,
+        "w_plus": 15.0,
+        "w_minus": 0,
+        "n_nonzero": 5,
+        "p_value": 0.0625,
+        "note": "exact two-sided test via full sign enumeration (2^5=32 assignments); minimum achievable p-value at n_nonzero=5 is 0.0625 -- treat 'not significant' as uninformative at this sample size, not as evidence of no effect"
+      }
+    }
+  },
+  "raw_per_seed_summaries": {
+    "0": {
+      "no_sleep_naive": {
+        "n_queries": 893,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "CORRECT": 838,
+          "UNDETERMINED": 37,
+          "INCORRECT": 18
+        },
+        "correct_rate": 0.9384098544232923,
+        "incorrect_rate": 0.020156774916013438,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.04143337066069429,
+        "retrieval_accuracy": 0.9789719626168224,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 18,
+        "n_dangerous_contradiction_errors": 18,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9384098544232923,
+        "latency_p50_s": 0.35124921798706055,
+        "latency_p95_s": 0.474058198928833,
+        "latency_p99_s": 0.4905109882354736,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 32,
+        "model_calls": 893,
+        "n_failures": 0,
+        "wall_time_s": 323.61745142936707
+      },
+      "continuous_mvcc": {
+        "n_queries": 893,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "CORRECT": 838,
+          "UNDETERMINED": 37,
+          "INCORRECT": 18
+        },
+        "correct_rate": 0.9384098544232923,
+        "incorrect_rate": 0.020156774916013438,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.04143337066069429,
+        "retrieval_accuracy": 0.9789719626168224,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 18,
+        "n_dangerous_contradiction_errors": 18,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9384098544232923,
+        "latency_p50_s": 0.3497300148010254,
+        "latency_p95_s": 0.3740886688232422,
+        "latency_p99_s": 0.3837325763702393,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 107,
+        "model_calls": 893,
+        "n_failures": 0,
+        "wall_time_s": 305.46280455589294
+      },
+      "periodic_aisos": {
+        "n_queries": 893,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 37,
+          "CORRECT": 813,
+          "STALE": 18
+        },
+        "correct_rate": 0.910414333706607,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.020156774916013438,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.027995520716685332,
+        "undetermined_rate": 0.04143337066069429,
+        "retrieval_accuracy": 0.9497663551401869,
+        "safe_abstention_rate": 0.027995520716685332,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 18,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.910414333706607,
+        "latency_p50_s": 0.35035204887390137,
+        "latency_p95_s": 0.3735612869262695,
+        "latency_p99_s": 0.3795234394073487,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 264,
+        "model_calls": 893,
+        "n_failures": 0,
+        "wall_time_s": 303.81717228889465
+      },
+      "periodic_aisos_without_trust_tier": {
+        "n_queries": 893,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 37,
+          "CORRECT": 664,
+          "STALE": 167
+        },
+        "correct_rate": 0.7435610302351624,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.187010078387458,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.027995520716685332,
+        "undetermined_rate": 0.04143337066069429,
+        "retrieval_accuracy": 0.7757009345794392,
+        "safe_abstention_rate": 0.027995520716685332,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 18,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.7435610302351624,
+        "latency_p50_s": 0.3502984046936035,
+        "latency_p95_s": 0.37668957710266116,
+        "latency_p99_s": 0.38738423347473144,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 231,
+        "model_calls": 893,
+        "n_failures": 0,
+        "wall_time_s": 304.196809053421
+      }
+    },
+    "1": {
+      "no_sleep_naive": {
+        "n_queries": 887,
+        "n_evaluated": 855,
+        "verdict_counts": {
+          "CORRECT": 842,
+          "UNDETERMINED": 32,
+          "INCORRECT": 13
+        },
+        "correct_rate": 0.9492671927846674,
+        "incorrect_rate": 0.014656144306651634,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.036076662908680945,
+        "retrieval_accuracy": 0.9847953216374269,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 13,
+        "n_dangerous_contradiction_errors": 13,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9492671927846674,
+        "latency_p50_s": 0.3476085662841797,
+        "latency_p95_s": 0.3734553337097168,
+        "latency_p99_s": 0.3845780658721924,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 32,
+        "model_calls": 887,
+        "n_failures": 0,
+        "wall_time_s": 302.46578073501587
+      },
+      "continuous_mvcc": {
+        "n_queries": 887,
+        "n_evaluated": 855,
+        "verdict_counts": {
+          "CORRECT": 842,
+          "UNDETERMINED": 32,
+          "INCORRECT": 13
+        },
+        "correct_rate": 0.9492671927846674,
+        "incorrect_rate": 0.014656144306651634,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.036076662908680945,
+        "retrieval_accuracy": 0.9847953216374269,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 13,
+        "n_dangerous_contradiction_errors": 13,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9492671927846674,
+        "latency_p50_s": 0.3503706455230713,
+        "latency_p95_s": 0.374440336227417,
+        "latency_p99_s": 0.3804365587234497,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 113,
+        "model_calls": 887,
+        "n_failures": 0,
+        "wall_time_s": 305.4928319454193
+      },
+      "periodic_aisos": {
+        "n_queries": 887,
+        "n_evaluated": 855,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 32,
+          "CORRECT": 813,
+          "STALE": 17
+        },
+        "correct_rate": 0.9165727170236753,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.019165727170236752,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02818489289740699,
+        "undetermined_rate": 0.036076662908680945,
+        "retrieval_accuracy": 0.9508771929824561,
+        "safe_abstention_rate": 0.02818489289740699,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 13,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9165727170236753,
+        "latency_p50_s": 0.35207414627075195,
+        "latency_p95_s": 0.3741781234741211,
+        "latency_p99_s": 0.38196768760681155,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 267,
+        "model_calls": 887,
+        "n_failures": 0,
+        "wall_time_s": 302.86610651016235
+      },
+      "periodic_aisos_without_trust_tier": {
+        "n_queries": 887,
+        "n_evaluated": 855,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 32,
+          "CORRECT": 588,
+          "STALE": 242
+        },
+        "correct_rate": 0.6629086809470124,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.27282976324689967,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02818489289740699,
+        "undetermined_rate": 0.036076662908680945,
+        "retrieval_accuracy": 0.6877192982456141,
+        "safe_abstention_rate": 0.02818489289740699,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 13,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.6629086809470124,
+        "latency_p50_s": 0.35453319549560547,
+        "latency_p95_s": 0.3800800323486328,
+        "latency_p99_s": 0.3896316576004028,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 234,
+        "model_calls": 887,
+        "n_failures": 0,
+        "wall_time_s": 306.08688259124756
+      }
+    },
+    "2": {
+      "no_sleep_naive": {
+        "n_queries": 891,
+        "n_evaluated": 872,
+        "verdict_counts": {
+          "CORRECT": 841,
+          "UNDETERMINED": 19,
+          "INCORRECT": 31
+        },
+        "correct_rate": 0.9438832772166106,
+        "incorrect_rate": 0.03479236812570146,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.02132435465768799,
+        "retrieval_accuracy": 0.9644495412844036,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 31,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9438832772166106,
+        "latency_p50_s": 0.34988880157470703,
+        "latency_p95_s": 0.3769329786300659,
+        "latency_p99_s": 0.38721520900726325,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 32,
+        "model_calls": 891,
+        "n_failures": 0,
+        "wall_time_s": 307.2222285270691
+      },
+      "continuous_mvcc": {
+        "n_queries": 891,
+        "n_evaluated": 872,
+        "verdict_counts": {
+          "CORRECT": 841,
+          "UNDETERMINED": 19,
+          "INCORRECT": 31
+        },
+        "correct_rate": 0.9438832772166106,
+        "incorrect_rate": 0.03479236812570146,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.02132435465768799,
+        "retrieval_accuracy": 0.9644495412844036,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 31,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9438832772166106,
+        "latency_p50_s": 0.34738779067993164,
+        "latency_p95_s": 0.3735792636871338,
+        "latency_p99_s": 0.3816453695297241,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 109,
+        "model_calls": 891,
+        "n_failures": 0,
+        "wall_time_s": 304.40439915657043
+      },
+      "periodic_aisos": {
+        "n_queries": 891,
+        "n_evaluated": 872,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 19,
+          "CORRECT": 830,
+          "STALE": 17
+        },
+        "correct_rate": 0.9315375982042648,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.019079685746352413,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.028058361391694726,
+        "undetermined_rate": 0.02132435465768799,
+        "retrieval_accuracy": 0.9518348623853211,
+        "safe_abstention_rate": 0.028058361391694726,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9315375982042648,
+        "latency_p50_s": 0.34984326362609863,
+        "latency_p95_s": 0.37407100200653076,
+        "latency_p99_s": 0.3803683280944824,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 262,
+        "model_calls": 891,
+        "n_failures": 0,
+        "wall_time_s": 305.5650324821472
+      },
+      "periodic_aisos_without_trust_tier": {
+        "n_queries": 891,
+        "n_evaluated": 872,
+        "verdict_counts": {
+          "UNKNOWN": 25,
+          "UNDETERMINED": 19,
+          "CORRECT": 523,
+          "STALE": 324
+        },
+        "correct_rate": 0.5869809203142536,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.36363636363636365,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.028058361391694726,
+        "undetermined_rate": 0.02132435465768799,
+        "retrieval_accuracy": 0.5997706422018348,
+        "safe_abstention_rate": 0.028058361391694726,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.5869809203142536,
+        "latency_p50_s": 0.36583971977233887,
+        "latency_p95_s": 0.47648346424102783,
+        "latency_p99_s": 0.4869057893753052,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 229,
+        "model_calls": 891,
+        "n_failures": 0,
+        "wall_time_s": 340.71647119522095
+      }
+    },
+    "3": {
+      "no_sleep_naive": {
+        "n_queries": 890,
+        "n_evaluated": 861,
+        "verdict_counts": {
+          "CORRECT": 830,
+          "UNDETERMINED": 29,
+          "INCORRECT": 31
+        },
+        "correct_rate": 0.9325842696629213,
+        "incorrect_rate": 0.0348314606741573,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.03258426966292135,
+        "retrieval_accuracy": 0.9639953542392566,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 31,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9325842696629213,
+        "latency_p50_s": 0.4528893232345581,
+        "latency_p95_s": 0.48172640800476074,
+        "latency_p99_s": 0.4877074432373047,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 32,
+        "model_calls": 890,
+        "n_failures": 0,
+        "wall_time_s": 394.0603485107422
+      },
+      "continuous_mvcc": {
+        "n_queries": 890,
+        "n_evaluated": 861,
+        "verdict_counts": {
+          "CORRECT": 830,
+          "UNDETERMINED": 29,
+          "INCORRECT": 31
+        },
+        "correct_rate": 0.9325842696629213,
+        "incorrect_rate": 0.0348314606741573,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.03258426966292135,
+        "retrieval_accuracy": 0.9639953542392566,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 31,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9325842696629213,
+        "latency_p50_s": 0.45140540599823,
+        "latency_p95_s": 0.47994987964630126,
+        "latency_p99_s": 0.48669299840927127,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 110,
+        "model_calls": 890,
+        "n_failures": 0,
+        "wall_time_s": 393.04384779930115
+      },
+      "periodic_aisos": {
+        "n_queries": 890,
+        "n_evaluated": 861,
+        "verdict_counts": {
+          "UNKNOWN": 24,
+          "UNDETERMINED": 29,
+          "CORRECT": 822,
+          "STALE": 15
+        },
+        "correct_rate": 0.9235955056179775,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.016853932584269662,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02696629213483146,
+        "undetermined_rate": 0.03258426966292135,
+        "retrieval_accuracy": 0.9547038327526133,
+        "safe_abstention_rate": 0.02696629213483146,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9235955056179775,
+        "latency_p50_s": 0.4266613721847534,
+        "latency_p95_s": 0.4776306390762329,
+        "latency_p99_s": 0.48669985294342044,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 266,
+        "model_calls": 890,
+        "n_failures": 0,
+        "wall_time_s": 351.9231767654419
+      },
+      "periodic_aisos_without_trust_tier": {
+        "n_queries": 890,
+        "n_evaluated": 861,
+        "verdict_counts": {
+          "UNKNOWN": 24,
+          "UNDETERMINED": 29,
+          "CORRECT": 610,
+          "STALE": 227
+        },
+        "correct_rate": 0.6853932584269663,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.2550561797752809,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02696629213483146,
+        "undetermined_rate": 0.03258426966292135,
+        "retrieval_accuracy": 0.7084785133565621,
+        "safe_abstention_rate": 0.02696629213483146,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 31,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.6853932584269663,
+        "latency_p50_s": 0.34964752197265625,
+        "latency_p95_s": 0.3755120515823364,
+        "latency_p99_s": 0.3836928129196167,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 233,
+        "model_calls": 890,
+        "n_failures": 0,
+        "wall_time_s": 303.3819377422333
+      }
+    },
+    "4": {
+      "no_sleep_naive": {
+        "n_queries": 889,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "CORRECT": 810,
+          "UNDETERMINED": 33,
+          "INCORRECT": 46
+        },
+        "correct_rate": 0.9111361079865017,
+        "incorrect_rate": 0.05174353205849269,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.03712035995500562,
+        "retrieval_accuracy": 0.9462616822429907,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 46,
+        "n_dangerous_contradiction_errors": 46,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9111361079865017,
+        "latency_p50_s": 0.3482778072357178,
+        "latency_p95_s": 0.3759566307067871,
+        "latency_p99_s": 0.3866270446777344,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 32,
+        "model_calls": 889,
+        "n_failures": 0,
+        "wall_time_s": 301.8780155181885
+      },
+      "continuous_mvcc": {
+        "n_queries": 889,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "CORRECT": 810,
+          "UNDETERMINED": 33,
+          "INCORRECT": 46
+        },
+        "correct_rate": 0.9111361079865017,
+        "incorrect_rate": 0.05174353205849269,
+        "stale_rate": 0.0,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.0,
+        "undetermined_rate": 0.03712035995500562,
+        "retrieval_accuracy": 0.9462616822429907,
+        "safe_abstention_rate": 0.0,
+        "dangerous_contradiction_error_rate": 1.0,
+        "n_contradictory_category_queries": 46,
+        "n_dangerous_contradiction_errors": 46,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9111361079865017,
+        "latency_p50_s": 0.35044217109680176,
+        "latency_p95_s": 0.37999796867370605,
+        "latency_p99_s": 0.38980302810668943,
+        "cycles_run": 0,
+        "rollback_count": null,
+        "final_store_size": 111,
+        "model_calls": 889,
+        "n_failures": 0,
+        "wall_time_s": 303.30913186073303
+      },
+      "periodic_aisos": {
+        "n_queries": 889,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "UNKNOWN": 24,
+          "UNDETERMINED": 33,
+          "CORRECT": 819,
+          "STALE": 13
+        },
+        "correct_rate": 0.9212598425196851,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.014623172103487065,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02699662542182227,
+        "undetermined_rate": 0.03712035995500562,
+        "retrieval_accuracy": 0.9567757009345794,
+        "safe_abstention_rate": 0.02699662542182227,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 46,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.9212598425196851,
+        "latency_p50_s": 0.35280323028564453,
+        "latency_p95_s": 0.38003835678100584,
+        "latency_p99_s": 0.39264320373535155,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 265,
+        "model_calls": 889,
+        "n_failures": 0,
+        "wall_time_s": 305.22287821769714
+      },
+      "periodic_aisos_without_trust_tier": {
+        "n_queries": 889,
+        "n_evaluated": 856,
+        "verdict_counts": {
+          "UNKNOWN": 24,
+          "UNDETERMINED": 33,
+          "CORRECT": 673,
+          "STALE": 159
+        },
+        "correct_rate": 0.7570303712035995,
+        "incorrect_rate": 0.0,
+        "stale_rate": 0.17885264341957255,
+        "contradictory_rate": 0.0,
+        "unknown_rate": 0.02699662542182227,
+        "undetermined_rate": 0.03712035995500562,
+        "retrieval_accuracy": 0.7862149532710281,
+        "safe_abstention_rate": 0.02699662542182227,
+        "dangerous_contradiction_error_rate": 0.0,
+        "n_contradictory_category_queries": 46,
+        "n_dangerous_contradiction_errors": 0,
+        "contradiction_rate": 0.0,
+        "task_success_rate": 0.7570303712035995,
+        "latency_p50_s": 0.349318265914917,
+        "latency_p95_s": 0.37724933624267576,
+        "latency_p99_s": 0.39278181076049806,
+        "cycles_run": 66,
+        "rollback_count": 0,
+        "final_store_size": 232,
+        "model_calls": 889,
+        "n_failures": 0,
+        "wall_time_s": 302.3476507663727
+      }
+    }
+  }
+}

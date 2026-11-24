@@ -1,0 +1,40 @@
+# AISOS SDK provider profiles. Each profile names a `kind` (matched against
+# aisos/providers/registry.py's _KIND_BUILDERS) plus that provider's own
+# fields. Never put a literal API key here -- api_key_env names the
+# environment variable to read the key from at call time (see
+# `aisos env set` in the CLI, or export it in your own shell). This file is
+# safe to commit to version control as-is.
+#
+# Build a backend from a profile with:
+#   from aisos.providers.registry import backend_from_profile
+#   backend = backend_from_profile("local-ollama")
+
+profiles:
+  local-ollama:
+    kind: ollama
+    model: "llama3:latest"
+    host: "http://localhost:11434"
+
+  ci-echo:
+    kind: echo
+
+  openai-gpt4o-mini:
+    kind: openai
+    model: "gpt-4o-mini"
+    api_key_env: OPENAI_API_KEY
+
+  groq-llama3-70b:
+    kind: groq
+    model: "llama-3.1-70b-versatile"
+    api_key_env: GROQ_API_KEY
+
+  local-vllm:
+    kind: vllm
+    model: "meta-llama/Llama-3-8b-instruct"
+    base_url: "http://localhost:8000/v1"
+    api_key_env: VLLM_API_KEY
+
+  anthropic-claude:
+    kind: anthropic
+    model: "claude-sonnet-4-20250514"
+    api_key_env: ANTHROPIC_API_KEY

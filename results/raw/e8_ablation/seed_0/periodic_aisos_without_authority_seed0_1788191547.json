@@ -1,0 +1,139 @@
+{
+  "condition": "periodic_aisos_without_authority",
+  "records": [
+    {
+      "interaction_id": 22,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "stable",
+      "subject": "stable_0",
+      "predicate": "value",
+      "query": "What is the current value for stable_0?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": null,
+      "store_values_before_query": [],
+      "ground_truth": "stable_value_stable_0",
+      "agent_response": "I don't know.",
+      "evaluation_result": "UNKNOWN",
+      "latency_s": 0.22315168380737305,
+      "lifecycle_state": "AWAKE",
+      "sleep_pressure": 0.0,
+      "cycles_run_so_far": 1,
+      "store_size": 26
+    },
+    {
+      "interaction_id": 23,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "stable",
+      "subject": "stable_4",
+      "predicate": "value",
+      "query": "What is the current value for stable_4?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": null,
+      "store_values_before_query": [],
+      "ground_truth": "stable_value_stable_4",
+      "agent_response": "I don't know.",
+      "evaluation_result": "UNKNOWN",
+      "latency_s": 0.2093648910522461,
+      "lifecycle_state": "AWAKE",
+      "sleep_pressure": 0.0,
+      "cycles_run_so_far": 1,
+      "store_size": 26
+    },
+    {
+      "interaction_id": 24,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "changing",
+      "subject": "changing_0",
+      "predicate": "value",
+      "query": "What is the current value for changing_0?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": null,
+      "store_values_before_query": [],
+      "ground_truth": "changing_0_v0",
+      "agent_response": "I don't know.",
+      "evaluation_result": "UNKNOWN",
+      "latency_s": 0.19545292854309082,
+      "lifecycle_state": "AWAKE",
+      "sleep_pressure": 0.0,
+      "cycles_run_so_far": 1,
+      "store_size": 26
+    }
+  ],
+  "resource_samples": [
+    {
+      "interaction_id": 0,
+      "cpu_percent": 0.0,
+      "rss_mb": 32.93359375
+    }
+  ],
+  "failures": [],
+  "lifecycle_trace": [
+    {
+      "ts": 1788191557.9258094,
+      "from_state": "AWAKE",
+      "event": "enter_light",
+      "to_state": "LIGHT"
+    },
+    {
+      "ts": 1788191557.9268682,
+      "from_state": "LIGHT",
+      "event": "finish_stage",
+      "to_state": "DEEP"
+    },
+    {
+      "ts": 1788191557.9270794,
+      "from_state": "DEEP",
+      "event": "finish_stage",
+      "to_state": "DREAM"
+    },
+    {
+      "ts": 1788191557.9271986,
+      "from_state": "DREAM",
+      "event": "request_wake_verify",
+      "to_state": "WAKE_VERIFY"
+    },
+    {
+      "ts": 1788191557.9280295,
+      "from_state": "WAKE_VERIFY",
+      "event": "verify_pass",
+      "to_state": "AWAKE"
+    }
+  ],
+  "scheduler_trace": [
+    {
+      "interaction_id": 15,
+      "decision": "enter_light (periodic)"
+    }
+  ],
+  "maintenance_events": [
+    {
+      "interaction_id": 15,
+      "kind": "sleep_entry",
+      "detail": {
+        "target": "enter_light"
+      }
+    },
+    {
+      "interaction_id": 15,
+      "kind": "cycle_complete",
+      "detail": {
+        "aborted": false,
+        "stage_reached": "LIGHT",
+        "verify_passed": true
+      }
+    }
+  ],
+  "final_metrics": {
+    "store_size": 26,
+    "live_memory_count": 0,
+    "cycles_run": 1,
+    "lifecycle_state": "AWAKE",
+    "sleep_pressure": 0.0,
+    "rollback_count": 0
+  },
+  "model_calls": 3,
+  "wall_time_s": 0.6307461261749268
+}

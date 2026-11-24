@@ -1,0 +1,41 @@
+# Default AISOSAgent construction parameters (Master Prompt Section 4/7:
+# "Do NOT hard-code values without exposing them through configuration").
+#
+# These are the same values aisos/core/adapter.py's AISOSAgent.__init__ used
+# as Python keyword defaults before this file existed; AISOSAgent.from_config()
+# (aisos/config.py) loads this file and applies any override the caller
+# passes on top of it, so a single YAML edit changes every experiment/test
+# that constructs an agent via from_config() without touching source code.
+
+scheduler:
+  tau_light: 0.35
+  tau_deep: 0.65
+  weights:
+    memory_utilization: 0.20
+    duplicate_ratio: 0.15
+    contradiction_ratio: 0.20
+    retrieval_degradation: 0.15
+    verification_backlog: 0.10
+    maintenance_backlog: 0.10
+    uptime_since_last_sleep: 0.10
+
+interrupt:
+  atomic_unit_duration_ms: 50.0
+  max_defer_ms: 100.0
+
+memory:
+  segment_size: 8
+  max_versions_per_subject: 3
+
+promotion:
+  max_allowed_drift: 0.6
+  drift_baseline_min: 20
+  max_promotions_per_cycle: 25
+  confidence_threshold: 0.55
+  max_promotion_rounds: 4
+  consistency_tolerance: 0
+
+fleet:
+  # Only used when an experiment explicitly constructs a FleetCoordinator
+  # (E6) and wires it into an agent via fleet_coordinator=.
+  replica_id: 0

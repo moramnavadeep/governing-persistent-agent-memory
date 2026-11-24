@@ -1,0 +1,91 @@
+{
+  "condition": "continuous_mvcc",
+  "records": [
+    {
+      "interaction_id": 22,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "stable",
+      "subject": "stable_0",
+      "predicate": "value",
+      "query": "What is the current value for stable_0?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": "stable_value_stable_0",
+      "store_values_before_query": [
+        "stable_value_stable_0"
+      ],
+      "ground_truth": "stable_value_stable_0",
+      "agent_response": "The current value for stable_0 is stable_value_stable_0.",
+      "evaluation_result": "CORRECT",
+      "latency_s": 0.36202526092529297,
+      "lifecycle_state": "N/A",
+      "sleep_pressure": null,
+      "cycles_run_so_far": 0,
+      "store_size": 22
+    },
+    {
+      "interaction_id": 23,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "stable",
+      "subject": "stable_4",
+      "predicate": "value",
+      "query": "What is the current value for stable_4?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": "stable_value_stable_4",
+      "store_values_before_query": [
+        "stable_value_stable_4"
+      ],
+      "ground_truth": "stable_value_stable_4",
+      "agent_response": "The current value for stable_4 is stable_value_stable_4.",
+      "evaluation_result": "CORRECT",
+      "latency_s": 0.3353438377380371,
+      "lifecycle_state": "N/A",
+      "sleep_pressure": null,
+      "cycles_run_so_far": 0,
+      "store_size": 22
+    },
+    {
+      "interaction_id": 24,
+      "session_id": 0,
+      "context_reset_applied": false,
+      "category": "changing",
+      "subject": "changing_0",
+      "predicate": "value",
+      "query": "What is the current value for changing_0?",
+      "model": "ollama:llama3:latest",
+      "current_value_before_query": "changing_0_v0",
+      "store_values_before_query": [
+        "changing_0_v0"
+      ],
+      "ground_truth": "changing_0_v0",
+      "agent_response": "The current value for changing_0 is changing_0_v0.",
+      "evaluation_result": "CORRECT",
+      "latency_s": 0.35448718070983887,
+      "lifecycle_state": "N/A",
+      "sleep_pressure": null,
+      "cycles_run_so_far": 0,
+      "store_size": 22
+    }
+  ],
+  "resource_samples": [
+    {
+      "interaction_id": 0,
+      "cpu_percent": 1.4,
+      "rss_mb": 33.046875
+    }
+  ],
+  "failures": [],
+  "lifecycle_trace": [],
+  "scheduler_trace": [],
+  "maintenance_events": [],
+  "final_metrics": {
+    "store_size": 22,
+    "cycles_run": 0,
+    "lifecycle_state": "N/A",
+    "sleep_pressure": null,
+    "contradiction_events": 0
+  },
+  "model_calls": 3,
+  "wall_time_s": 1.0521411895751953
+}

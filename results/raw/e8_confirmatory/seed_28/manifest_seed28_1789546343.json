@@ -1,0 +1,39 @@
+{
+  "experiment_id": "e8_confirmatory",
+  "run_id": "seed28_1789546343",
+  "timestamp": 1789547258.128155,
+  "git_commit": "unknown (not a git repo checkpoint or git unavailable)",
+  "workload_hash": "301d5a32b326ea2b7948b0e182054baa5d61560b8505edaeea9eb5343e32322a",
+  "model": "ollama:llama3:latest",
+  "model_version": "llama3:latest (Ollama local)",
+  "model_parameters": {
+    "temperature": 0.0,
+    "host": "http://localhost:11434",
+    "timeout_s": 60.0
+  },
+  "ollama_version": "ollama version is 0.34.0",
+  "dependency_versions": {
+    "requests": "2.34.2",
+    "psutil": "7.2.2",
+    "matplotlib": "3.11.1",
+    "PyYAML": "6.0.3"
+  },
+  "workload_version": "workload_1000.py seed=28",
+  "seed": 28,
+  "conditions": [
+    "no_sleep_naive",
+    "continuous_mvcc",
+    "periodic_aisos"
+  ],
+  "interaction_count": 1000,
+  "session_count": 20,
+  "reset_count": 19,
+  "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "status": "PRELIMINARY -- see docs/reproducibility.md",
+  "output_paths": [
+    "results\\raw\\e8_confirmatory\\seed_28\\no_sleep_naive_seed28_1789546343.json",
+    "results\\raw\\e8_confirmatory\\seed_28\\continuous_mvcc_seed28_1789546343.json",
+    "results\\raw\\e8_confirmatory\\seed_28\\periodic_aisos_seed28_1789546343.json"
+  ]
+}
